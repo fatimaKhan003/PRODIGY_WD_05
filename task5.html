@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtmosAlert - Home</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="weathericon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="weathericon.png" alt="WeatherWise Icon">
+            <h1>AtmosAlert</h1>
+        </div>
+        <div id="location-input">
+            <input type="text" id="city" placeholder="Enter city">
+            <button onclick="storeCity()">Get Weather</button>
+        </div>
+        <div id="map"></div>
+        <div id="search-summary"></div>
+        <nav>
+            <ul>
+                <li><a href="current.html">Current Weather</a></li>
+                <li><a href="forecast.html">5-Day Forecast</a></li>
+                <li><a href="pollution.html">Air Pollution</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
